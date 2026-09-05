@@ -1,0 +1,16 @@
+[Unit]
+Description=Digital Shop Telegram Bot Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+# Update WorkingDirectory if your project is located in another folder
+WorkingDirectory=/root/digital-store-by-rongz
+ExecStart=/root/digital-store-by-rongz/venv/bin/python main.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

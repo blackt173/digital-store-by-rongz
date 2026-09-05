@@ -16,6 +16,10 @@ venv/
 .venv/
 env/
 
+# Generated Invoices & Files
+invoices/
+*.pdf
+
 # IDE / Editor files
 .vscode/
 .idea/
